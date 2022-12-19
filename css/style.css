@@ -45,6 +45,10 @@ body{
     font-size: 32px;
 }
 
+.logo-href{
+    color: #FFFFFF;
+}
+
 .logo-back{
     background: url(../img/icon/polygon.png) center no-repeat;
     width: 58px;
@@ -60,6 +64,7 @@ body{
     height: 120px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .menu-panel{
@@ -110,7 +115,7 @@ a{
     color:rgba(255, 255, 255, 0.6);
 }
 
-a:hover{
+.menu-item a:hover{
     color: #18CFAB;
 }
 
@@ -147,7 +152,7 @@ h1{
 
 .btn{
     text-transform: uppercase;
-    width: 169px;
+    width: 168px;
     height: 68px;
     color: #fff;
     text-align: center;
@@ -261,6 +266,7 @@ h1{
 .tabs {
     display: flex;
     width: 100%;
+    z-index: 0;
 }
 
 .tabs-title {
@@ -373,6 +379,18 @@ h1{
 .work-container{
     background: #fff;
     height: 1212px;
+    padding: 74px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-content: center;
+    justify-content: center;
+}
+
+.work-gallery{
+    display: grid;
+    gap: 84px;
+    justify-items: center;
 }
 
 .work-cards{
@@ -382,3 +400,53 @@ h1{
     justify-items: center;
 }
 
+.work-filter{
+    display: grid;
+    justify-content: center;
+    width: 582px;
+    grid-template-columns: 77px 1fr 1fr 1fr 1fr;
+}
+
+.work-tab{
+    display: grid;
+    justify-content: center;
+}
+
+.work-tabs-title{
+    padding: 14px 0;
+    height: 55px;
+    text-align: center;
+    background: #E9EDEF;
+    border: 1px solid #DADADA;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 400;
+    color: #717171;
+}
+
+.work-tabs-title:nth-child(1){
+    width: 77px;
+}
+
+.work-tabs-title:hover, .work-tabs-title:focus {
+    border: 2px solid #18CFAB;
+}
+
+.work-tabs-title.active {
+    background: #18CFAB;
+    color: #fff;
+    border: 1px solid #18CFAB;
+}
+
+.btn-load{
+    background: #18CFAB;
+    font-size: 14px;
+    font-weight: 700;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
