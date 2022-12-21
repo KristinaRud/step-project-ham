@@ -225,13 +225,13 @@ h1{
     gap: 70px;
 }
 
-.services-header, .work-header{
+.services-header, .work-header, .breaking-news-header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.services-title, .work-title{
+.services-title, .work-title, .breaking-news-title{
     color: #4E4E4E;
     font-size: 36px;
     font-weight: 400;
@@ -377,7 +377,6 @@ h1{
 }
 
 .work-container{
-    background: #fff;
     height: 1212px;
     padding: 74px 0;
     display: flex;
@@ -398,6 +397,60 @@ h1{
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
+}
+
+.card{
+    position: relative;
+    width: 290px;
+    height: 211px;
+    display: flex;
+	align-items: flex-end;
+	transition: 0.4s ease-out;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover{
+    transform: translateY(0px);
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 15px; */
+    background: rgba(245, 244, 244, 1);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.card .info{
+    position: relative;
+	z-index: 3;
+	opacity: 0;
+    transform: translateY(30px);
+		transition: 0.5;
 }
 
 .work-filter{
@@ -430,15 +483,10 @@ h1{
     width: 77px;
 }
 
-.work-tabs-title:hover, .work-tabs-title:focus {
+.work-tabs-title:hover, .work-tabs-title.work-active {
     border: 2px solid #18CFAB;
 }
 
-.work-tabs-title.active {
-    background: #18CFAB;
-    color: #fff;
-    border: 1px solid #18CFAB;
-}
 
 .btn-load{
     background: #18CFAB;
@@ -449,4 +497,20 @@ h1{
     align-items: center;
     justify-content: center;
     gap: 15px;
+    box-shadow: none;
+}
+
+.breaking-news-section{
+    min-width: 1200px;
+    height: 958px;
+}
+
+.breaking-news-container{
+    background: #fff;
+    height: 958px;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
