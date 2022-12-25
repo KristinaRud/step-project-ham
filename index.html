@@ -24,7 +24,7 @@
                         <li class="menu-item"><a href="#">work</a></li>
                         <li class="menu-item"><a href="#">testimonials</a></li>
                     </ul>                
-                    <div class="search"><img src="./img/icon/search_icon.png" width="21px" height="20px" alt="search"></div>
+                    <div class="search"><img src="./img/icon/search_icon.png" width="21" height="20" alt="search"></div>
                 </div>
             </div>
         </nav>
@@ -39,23 +39,25 @@
         </div>
     </header>
     <main class="main">
-        <section class="benefits">
-            <div class="benefit benefit-item-1">
-                <img src="./img/icon/shape_629.png" width="61px" height="100px" alt="benefit-item-1">
-                <p>Different theme option</p>
-            </div>
-            <div class="benefit benefit-item-2">
-                <img src="./img/icon/shape_1172.png" width="93px" height="76px" alt="benefit-item-2">
-                <p>fully customizable</p>
-            </div>
-            <div class="benefit benefit-item-1">
-                <img src="./img/icon/shape_1179.png" width="60px" height="100px" alt="benefit-item-3">
-                <p>unlimited support</p>
-            </div>
-            <div class="benefit benefit-item-2">
-                <img src="./img/icon/shape_1102.png" width="99px" height="76px" alt="benefit-item-4">
-                <p>responsive all device</p>
-            </div>
+        <section>
+            <ul class="benefits">
+                <li class="benefit benefit-item-1">
+                    <img src="./img/icon/shape_629.png" width="61" height="100" alt="benefit-item-1">
+                    <p>Different theme option</p>
+                </li>
+                <li class="benefit benefit-item-2">
+                    <img src="./img/icon/shape_1172.png" width="93" height="76" alt="benefit-item-2">
+                    <p>fully customizable</p>
+                </li>
+                <li class="benefit benefit-item-1">
+                    <img src="./img/icon/shape_1179.png" width="60" height="100" alt="benefit-item-3">
+                    <p>unlimited support</p>
+                </li>
+                <li class="benefit benefit-item-2">
+                    <img src="./img/icon/shape_1102.png" width="99" height="76" alt="benefit-item-4">
+                    <p>responsive all device</p>
+                </li>
+            </ul>
         </section>
 
         <section class="container service-section">
@@ -66,25 +68,25 @@
             </div>
             <div class="centered-content">
                 <ul class="tabs">
-                    <li class="tabs-title active" data-tab-name="tab-1">Web Design</li>
-                    <li class="tabs-title" data-tab-name="tab-2">Graphic Design</li>
-                    <li class="tabs-title" data-tab-name="tab-3">Online Support</li>
-                    <li class="tabs-title" data-tab-name="tab-4">App Design</li>
-                    <li class="tabs-title" data-tab-name="tab-5">Online Marketing</li>
-                    <li class="tabs-title" data-tab-name="tab-6">Seo Service</li>
+                    <li class="tabs-title active" data-category="web-design">Web Design</li>
+                    <li class="tabs-title" data-category="graphic-design">Graphic Design</li>
+                    <li class="tabs-title" data-category="online-support">Online Support</li>
+                    <li class="tabs-title" data-category="app-design">App Design</li>
+                    <li class="tabs-title" data-category="online-marketing">Online Marketing</li>
+                    <li class="tabs-title" data-category="seo-service">Seo Service</li>
                 </ul>
                 <ul class="tabs-content">
                     <!-- Web Design -->
-                    <li class="tab active tab-1">
-                        <img alt="Web Design" src="./img/services/layer_9_1.png" width="194px" height="139px">
+                    <li class="tab active" data-category="web-design">
+                        <img alt="Web Design" src="./img/services/layer_9_1.png" width="194" height="139">
                         Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali now strikes alone, ready to be
                         the deadly weapon her people need. Though she holds onto all she learned from her master Shen, she has
                         pledged to defend Ionia from its enemies, one kill at a time. Akali may strike in silence, but her
                         message will be heard loud and clear: fear the assassin with no maste
                     </li>
                     <!-- Graphic Design -->
-                    <li class="tab tab-2">
-                        <img alt="Graphic Design" src="./img/services/graphic-design1.jpg" width="194px" height="139px">
+                    <li class="tab" data-category="graphic-design">
+                        <img alt="Graphic Design" src="./img/services/graphic-design1.jpg" width="194" height="139">
                         Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect
                         the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to
                         thwart any who dare disturb her homeland. Anivia guides and protects the tribes of the harsh north, who
@@ -93,8 +95,8 @@
                         tomorrow.
                     </li>
                     <!--Online Support -->
-                    <li class="tab tab-3">
-                        <img alt="Online Support" src="./img/services/graphic-design2.jpg" width="194px" height="139px">
+                    <li class="tab" data-category="online-support">
+                        <img alt="Online Support" src="./img/services/graphic-design2.jpg" width="194" height="139">
                         In Noxus, warriors known as reckoners face one another in arenas where blood is spilled and strength
                         tested—but none has ever been as celebrated as Draven. A former soldier, he found that the crowds
                         uniquely appreciated his flair for the dramatic, not to mention the spray of blood from each of his
@@ -102,8 +104,8 @@
                         whomever he must to ensure that his name is chanted throughout the empire forever more.
                     </li>
                     <!-- App Design -->
-                    <li class="tab tab-4">
-                        <img alt="App Design" src="./img/services/graphic-design3.jpg" width="194px" height="139px">
+                    <li class="tab" data-category="app-design">
+                        <img alt="App Design" src="./img/services/graphic-design3.jpg" width="194" height="139">
                         A proud and noble soldier, Garen fights at the head of the Dauntless Vanguard. He is popular among his
                         fellows, and respected well enough by his enemies—not least as a scion of the prestigious Crownguard
                         family, entrusted with defending Demacia and its ideals. Clad in magic-resistant armor and bearing a
@@ -111,8 +113,8 @@
                         veritable whirlwind of righteous steel.
                     </li>
                     <!-- Online Marketing -->
-                    <li class="tab tab-5">
-                        <img alt="Online Marketing" src="./img/services/graphic-design4.jpg" width="194px" height="139px">
+                    <li class="tab" data-category="online-marketing">
+                        <img alt="Online Marketing" src="./img/services/graphic-design4.jpg" width="194" height="139">
                         Decisive in judgment and lethal in combat, Katarina is a Noxian assassin of the highest caliber. Eldest
                         daughter to the legendary General Du Couteau, she made her talents known with swift kills against
                         unsuspecting enemies. Her fiery ambition has driven her to pursue heavily-guarded targets, even at the
@@ -120,8 +122,8 @@
                         duty amid a whirlwind of serrated daggers.
                     </li>
                     <!-- Seo Service -->
-                    <li class="tab tab-6">
-                        <img alt="Seo Service" src="./img/services/graphic-design5.jpg" width="194px" height="139px">
+                    <li class="tab" data-category="seo-service">
+                        <img alt="Seo Service" src="./img/services/graphic-design5.jpg" width="194" height="139">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum 
                         dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur 
@@ -153,46 +155,14 @@
                 <div class="work-gallery">
                     <div class="work-tab">
                         <ul class="work-filter">
-                            <li class="work-tabs-title work-active" data-tab-name="all">All</li>
-                            <li class="work-tabs-title" data-tab-name="graphic-design">Graphic Design</li>
-                            <li class="work-tabs-title" data-tab-name="web-design">Web Design</li>
-                            <li class="work-tabs-title" data-tab-name="landing-pages">Landing Pages</li>
-                            <li class="work-tabs-title" data-tab-name="wordpress">Wordpress</li>   
+                            <li class="work-tabs-title work-active" data-category="all">All</li>
+                            <li class="work-tabs-title" data-category="graphic-design">Graphic Design</li>
+                            <li class="work-tabs-title" data-category="web-design">Web Design</li>
+                            <li class="work-tabs-title" data-category="landing-pages">Landing Pages</li>
+                            <li class="work-tabs-title" data-category="wordpress">Wordpress</li>   
                         </ul>
                     </div>
                     <ul class="work-cards">
-                        <li class="card">
-                            <img class="img" alt="Online Marketing" src="./img/services/graphic-design1.jpg">
-                            <div class="info">
-                                <div class="info-ref">
-                                    <a href="#">
-                                        <span class="circle first-circ">
-                                            <img class="icon-link" alt="link" src="./img/icon/Combined shape 7431.png" width="14" height="14"/>
-                                        </span>
-                                    </a>
-                                    <a href="#">
-                                        <span class="circle second-circ">
-                                            <img class="icon-link" alt="square" src="./img/icon/Layer 23.png" width="12px" height="12px"/>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="info-decri">
-                                    <h3 class="info-title color-aqua uppercase">creative design</h3>
-                                    <p class="info-paragraph">Web Design</p>
-                                </div>
-                            </div>
-                        </li>
-                        <img alt="Online Marketing" src="./img/all/Layer 24.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 25.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 26.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 27.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 28.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 29.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 30.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 31.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 32.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 33.png" width="290px" height="211px">
-                        <img alt="Online Marketing" src="./img/all/Layer 34.png" width="290px" height="211px">
                     </ul>
                     <button type="button" class="btn uppercase btn-load">
                         <img alt="plus" src="./img/icon/Forma 1.png">
@@ -213,7 +183,7 @@
                     <li class="news-card">
                         <a href="#">
                             <div class="card-photo">
-                                <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
                                 <div class="green">
                                     <p>12</p><p>Feb</p>
                                 </div>
@@ -226,103 +196,117 @@
                         </a>
                     </li>
 
-                    <div class="news-card">
-                        <div class="card-photo">
-                            <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
-                            <div class="green">
-                                <p>12</p><p>Feb</p>
+                    <li class="news-card">
+                        <a href="#">
+                            <div class="card-photo">
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
+                                <div class="green">
+                                    <p>12</p><p>Feb</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="news-card-title">
-                            <h4>Amazing Blog Post</h4>
-                            <p>By admin    |    2 comment</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="card-photo">
-                            <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
-                            <div class="green">
-                                <p>12</p><p>Feb</p>
+    
+                            <div class="news-card-title">
+                                <h4>Amazing Blog Post</h4>
+                                <p>By admin    |    2 comment</p>
                             </div>
-                        </div>
+                        </a>
+                    </li>
 
-                        <div class="news-card-title">
-                            <h4>Amazing Blog Post</h4>
-                            <p>By admin    |    2 comment</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="card-photo">
-                            <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
-                            <div class="green">
-                                <p>12</p><p>Feb</p>
+                    <li class="news-card">
+                        <a href="#">
+                            <div class="card-photo">
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
+                                <div class="green">
+                                    <p>12</p><p>Feb</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="news-card-title">
-                            <h4>Amazing Blog Post</h4>
-                            <p>By admin    |    2 comment</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="card-photo">
-                            <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
-                            <div class="green">
-                                <p>12</p><p>Feb</p>
+    
+                            <div class="news-card-title">
+                                <h4>Amazing Blog Post</h4>
+                                <p>By admin    |    2 comment</p>
                             </div>
-                        </div>
+                        </a>
+                    </li>
 
-                        <div class="news-card-title">
-                            <h4>Amazing Blog Post</h4>
-                            <p>By admin    |    2 comment</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="card-photo">
-                            <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
-                            <div class="green">
-                                <p>12</p><p>Feb</p>
+                    <li class="news-card">
+                        <a href="#">
+                            <div class="card-photo">
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
+                                <div class="green">
+                                    <p>12</p><p>Feb</p>
+                                </div>
                             </div>
-                        </div>
+    
+                            <div class="news-card-title">
+                                <h4>Amazing Blog Post</h4>
+                                <p>By admin    |    2 comment</p>
+                            </div>
+                        </a>
+                    </li>
 
-                        <div class="news-card-title">
-                            <h4>Amazing Blog Post</h4>
-                            <p>By admin    |    2 comment</p>
-                        </div>
-                    </div>
+                    <li class="news-card">
+                        <a href="#">
+                            <div class="card-photo">
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
+                                <div class="green">
+                                    <p>12</p><p>Feb</p>
+                                </div>
+                            </div>
+    
+                            <div class="news-card-title">
+                                <h4>Amazing Blog Post</h4>
+                                <p>By admin    |    2 comment</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="news-card">
+                        <a href="#">
+                            <div class="card-photo">
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
+                                <div class="green">
+                                    <p>12</p><p>Feb</p>
+                                </div>
+                            </div>
+    
+                            <div class="news-card-title">
+                                <h4>Amazing Blog Post</h4>
+                                <p>By admin    |    2 comment</p>
+                            </div>
+                        </a>
+                    </li>
                     
-                    <div class="news-card">
-                        <div class="card-photo">
-                            <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
-                            <div class="green">
-                                <p>12</p><p>Feb</p>
+                    <li class="news-card">
+                        <a href="#">
+                            <div class="card-photo">
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
+                                <div class="green">
+                                    <p>12</p><p>Feb</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="news-card-title">
-                            <h4>Amazing Blog Post</h4>
-                            <p>By admin    |    2 comment</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="card-photo">
-                            <img alt="news img" src="./img/news/Layer 47.png" width="263px" height="208px">                
-                            <div class="green">
-                                <p>12</p><p>Feb</p>
+    
+                            <div class="news-card-title">
+                                <h4>Amazing Blog Post</h4>
+                                <p>By admin    |    2 comment</p>
                             </div>
-                        </div>
+                        </a>
+                    </li>
 
-                        <div class="news-card-title">
-                            <h4>Amazing Blog Post</h4>
-                            <p>By admin    |    2 comment</p>
-                        </div>
-                    </div>
+                    <li class="news-card">
+                        <a href="#">
+                            <div class="card-photo">
+                                <img alt="news img" src="./img/news/Layer 47.png" width="263" height="208">                
+                                <div class="green">
+                                    <p>12</p><p>Feb</p>
+                                </div>
+                            </div>
+    
+                            <div class="news-card-title">
+                                <h4>Amazing Blog Post</h4>
+                                <p>By admin    |    2 comment</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -334,7 +318,7 @@
                 <hr class="second-line">
             </div>
             <div class="people__review_reviews">
-                <img slt="double-shape" src="./img/icon/Combined shape 2474.png" width="44px" height="30px">
+                <img slt="double-shape" src="./img/icon/Combined shape 2474.png" width="44" height="30">
             </div>
         </section>>
 
