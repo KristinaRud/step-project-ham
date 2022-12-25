@@ -225,13 +225,13 @@ h1{
     gap: 70px;
 }
 
-.services-header, .work-header, .breaking-news-header{
+.services-header, .work-header, .breaking-news-header, .people__review_header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.services-title, .work-title, .breaking-news-title{
+.services-title, .work-title, .breaking-news-title, .people__review_title{
     color: #4E4E4E;
     font-size: 36px;
     font-weight: 400;
@@ -310,7 +310,8 @@ h1{
 .tabs-title.active::after{
     content: '';
     position: absolute;
-    left: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -13px;
     width: 0;
     height: 0;
@@ -404,11 +405,13 @@ h1{
     width: 290px;
     height: 211px;
     display: flex;
-	align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 	transition: 0.4s ease-out;
+    
 }
 
-.card img{
+.card .img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -428,6 +431,10 @@ h1{
 .card:hover .info{
     opacity: 1;
     transform: translateY(0px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .card:before {
@@ -435,14 +442,16 @@ h1{
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
     /* border-radius: 15px; */
-    background: rgba(245, 244, 244, 1);
+    background: #E9EDEF;
     z-index: 2;
     transition: 0.5s;
     opacity: 0;
+
+    border-top: 2px solid #18CFAB;
 }
 
 .card .info{
@@ -451,6 +460,55 @@ h1{
 	opacity: 0;
     transform: translateY(30px);
 		transition: 0.5;
+}
+
+.info-ref{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.circle{
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.icon-link{
+    object-fit: unset;
+    position: relative;
+}
+
+.first-circ{
+    background-color: #fff;
+    border: 2px solid #18CFAB;
+}
+
+.second-circ{
+    background-color: #18CFAB;
+}
+
+
+.info-decri{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-title{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.info-paragraph{
+    font-size: 12px;
+    font-weight: 300;
+    color: #8A8A8A;
 }
 
 .work-filter{
@@ -500,6 +558,8 @@ h1{
     box-shadow: none;
 }
 
+/* news */
+
 .breaking-news-section{
     min-width: 1200px;
     height: 958px;
@@ -513,4 +573,84 @@ h1{
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    gap: 22px;
+}
+
+.breaking__news_gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-card{
+    margin-top: 46px;
+}
+
+.card-photo{
+    position: relative;
+}
+
+.green{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 70px;
+    height: 68px;
+    background: #203E38;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.news-card-title{
+    line-height: 36px;
+    padding-left: 20px;
+}
+
+.news-card-title h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #717171;
+}
+
+.news-card-title p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+}
+
+.news-card:hover .green{
+    background: #18CFAB;
+} 
+
+.news-card:hover .news-card-title h4{
+    color: #18CFAB;
+}
+
+.people__review{
+    min-width: 1200px;
+    height: 853px;
+    background: linear-gradient(rgba(28, 42, 51, .7), rgba(28, 42, 51, .7)), url(../img/sections-background/section-3.jpg) center/cover no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    text-align:center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap:68px;
+}
+
+.people__review_title{
+    color: #FFFFFF;
 }
