@@ -115,7 +115,7 @@ a{
     color:rgba(255, 255, 255, 0.6);
 }
 
-.menu-item a:hover{
+.menu-item:hover a{
     color: #18CFAB;
 }
 
@@ -177,23 +177,23 @@ h1{
 }
 
 /* benefits */
+.benefits-section{
+    padding: 8px 0;
+    background-color: #fff;
+}
 
 .benefits{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border-top: 8px solid #fff;
-    border-bottom: 8px solid #fff;
 }
 
 .benefit{
     height: 361px;
     text-transform: uppercase;
     font-weight: 700;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
+    align-content: center;
 
 }
 
@@ -216,43 +216,55 @@ h1{
 /* our services */
 
 .service-section{
-    height: 550px;
+    /* height: 550px; */
     background: #fff;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    display: grid;
     gap: 70px;
+    padding: 83px 0;
 }
 
 .services-header, .work-header, .breaking-news-header, .people__review_header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .services-title, .work-title, .breaking-news-title, .people__review_title{
     color: #4E4E4E;
     font-size: 36px;
     font-weight: 400;
+    padding-bottom: 26px;
 }
 
-.first-line, .second-line{
-    width: 75.5px;
-    height: 1px;
-    background: #18CFAB;
-    border: none;
+.title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-37%);
+    bottom: -3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1px 0 0 78px;
+    border-color: #18cfaa;
 }
-
-.first-line{
-    margin-top: 26px;
+.title::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1px 0 0 78px;
+    border-color: #18cfaa;
 }
-
-.second-line{
-    margin-top: 3px;
-    margin-left: 12px;
-}
-
 
 .centered-content {
     /* height: 50vh; */
@@ -336,16 +348,20 @@ h1{
 
 .purchase-section{
     min-width: 1200px;
-    height: 476px;
+    /* height: 476px; */
     background: linear-gradient(rgba(28, 42, 51, .7), rgba(28, 42, 51, .7)), url(../img/sections-background/section-2.jpg) center/cover no-repeat;
     background-position: top;
     background-attachment: fixed;
     text-align:center;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+
+    display: grid;
+    padding: 127px 0;
+    justify-items: center;
     gap:62px
 }
 
@@ -374,15 +390,13 @@ h1{
 .work-section{
     min-width: 1200px;
     background: #E9EDEF;
+    
 }
 
 .work-container{
-    padding: 74px 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;  
     gap: 70px;
-    align-content: center;
-    justify-content: center;
+    padding: 74px 0;
 }
 
 .work-gallery{
@@ -566,29 +580,25 @@ h1{
 
 .breaking-news-section{
     min-width: 1200px;
-    height: 958px;
 }
 
 .breaking-news-container{
     background: #fff;
-    height: 958px;
-    
+    padding: 82px 0 128px 0;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    gap: 22px;
+    gap: 68px;
 }
 
 .breaking__news_gallery{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 46px;
 
-.news-card{
-    margin-top: 46px;
+    justify-items: center;
 }
 
 .card-photo{
@@ -607,10 +617,12 @@ h1{
     font-weight: 400;
     line-height: 25px;
 
-    display: flex;
+    display: grid;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    justify-items: center;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    align-content: center;
 
 }
 
@@ -657,4 +669,8 @@ h1{
 
 .people__review_title{
     color: #FFFFFF;
+}
+
+.breaking-news-header{
+    position: relative;
 }
