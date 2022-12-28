@@ -284,7 +284,7 @@ const showImg = () => {
   const workCards = document.querySelector(".work-cards");
 
   let list = imagesArray.map((item, index) => {
-    if(index < step && index>=count){
+    if (index < step && index >= count) {
       const li = document.createElement("li");
       li.classList.add("card");
       li.classList.add("work-active");
@@ -316,34 +316,32 @@ const showImg = () => {
       li.append(img, infoCard);
 
       return li;
-    } return "";
-
-
+    }
+    return "";
   });
 
   workCards.append(...list);
 
-  if(step===imagesArray.length){
+  if (step === imagesArray.length) {
     btnLoad.remove();
   }
 };
-let step=12;
-let count=0;
+let step = 12;
+let count = 0;
 showImg();
 
-const btnLoad=document.querySelector(".btn-load");
-btnLoad.addEventListener('click', ()=>{
-  count+=12;
-  step+=12;
-  if(step <= imagesArray.length && count<=imagesArray.length){
+const btnLoad = document.querySelector(".btn-load");
+btnLoad.addEventListener("click", () => {
+  count += 12;
+  step += 12;
+  if (step <= imagesArray.length && count <= imagesArray.length) {
     showImg(step, count);
-  }else{
+  } else {
     btnLoad.remove();
   }
-})
+});
 
 const workTitles = document.querySelectorAll(".work-tabs-title"),
-  
   workTab = document.querySelector(".work-filter"),
   activeCardClass = "work-active";
 
@@ -357,3 +355,41 @@ workTab.addEventListener("click", (e) => {
     workCards.forEach((item) => item.classList.add("work-active"));
   }
 });
+
+const profileListTab = document.querySelector(".profile-tab");
+const profileList = document.querySelectorAll(".profile-tab > li");
+const profileListContent = document.querySelectorAll(
+  ".wrapper-about__main__img>li"
+);
+profileListTab.addEventListener("click", ({ target }) => {
+  const el = target.closest("li");
+
+  selectTitle(el, profileList, "show");
+  selectContent(el.dataset.category, profileListContent, "show");
+});
+
+const btnSelect = document.querySelector(".select-employer");
+let counter = 0;
+btnSelect.addEventListener("click", ({ target }) => {
+  if (target.closest("div#right")) {
+    moveRight();
+    profileList[counter].click();
+  } else if (target.closest("div#left")) {
+    moveLeft();
+    profileList[counter].click();
+  }
+});
+
+function moveRight() {
+  ++counter;
+  if (counter >= profileList.length) {
+    counter = 0;
+  }
+}
+
+function moveLeft() {
+  --counter;
+  if (counter < 0) {
+    counter = profileList.length - 1;
+  }
+}

@@ -653,7 +653,6 @@ h1{
 
 .people__review{
     min-width: 1200px;
-    height: 853px;
     background: linear-gradient(rgba(28, 42, 51, .7), rgba(28, 42, 51, .7)), url(../img/sections-background/section-3.jpg) center/cover no-repeat;
     background-position: top;
     background-attachment: fixed;
@@ -664,6 +663,7 @@ h1{
     align-items: center;
     justify-content: center;
 
+    padding: 98px 0;
     gap:68px;
 }
 
@@ -673,4 +673,49 @@ h1{
 
 .breaking-news-header{
     position: relative;
+}
+
+
+.wrapper-about__list__people {
+    padding-bottom: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.wrapper-about__main__img img,
+.wrapper-about__list__people img {
+    border-radius: 50%;
+}
+
+.wrapper-about__main__img img {
+    border: 12px solid rgba(31, 218, 181, 0.2);
+    margin-bottom: 50px;
+}
+.wrapper-about__list__people img {
+    border: 6px solid rgba(31, 218, 181, 0.2);
+}
+.about-pointer {
+    border: 1px solid #BBBBBB;
+    background: rgba(0, 0, 0, 0.0001);
+    width: 31px;
+    height: 31px;
+}
+.about-pointer:hover {
+    background: #18CFAB;
+}
+.about-pointer svg {
+    margin: 8px 10px;
+}
+
+.wrapper-about__main__img li{
+    display: none;
+}
+
+.wrapper-about__main__img .show{
+    display: block;
+}
+
+.profile-tab>li.show img{
+    border-color: pink ;
 }
