@@ -356,6 +356,7 @@ workTab.addEventListener("click", (e) => {
   }
 });
 
+let counter = 0;
 const profileListTab = document.querySelector(".profile-tab");
 const profileList = document.querySelectorAll(".profile-tab > li");
 const profileListContent = document.querySelectorAll(
@@ -366,10 +367,15 @@ profileListTab.addEventListener("click", ({ target }) => {
 
   selectTitle(el, profileList, "show");
   selectContent(el.dataset.category, profileListContent, "show");
+
+  profileList.forEach((el,index)=>{
+    if(el.classList.contains("show")){
+      counter = index;
+    }
+  })
 });
 
-const btnSelect = document.querySelector(".select-employer");
-let counter = 0;
+const btnSelect = document.querySelector(".wrapper-about__list__people");
 btnSelect.addEventListener("click", ({ target }) => {
   if (target.closest("div#right")) {
     moveRight();
