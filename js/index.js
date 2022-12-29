@@ -281,6 +281,7 @@ const imagesArray = [
 ];
 
 const showImg = () => {
+  document.querySelector(".load-txt").classList.remove('loading');
   const workCards = document.querySelector(".work-cards");
 
   let list = imagesArray.map((item, index) => {
@@ -335,7 +336,8 @@ btnLoad.addEventListener("click", () => {
   count += 12;
   step += 12;
   if (step <= imagesArray.length && count <= imagesArray.length) {
-    showImg(step, count);
+    document.querySelector(".load-txt").classList.add('loading');
+    setTimeout(showImg, 2600);
   } else {
     btnLoad.remove();
   }
