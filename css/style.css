@@ -9,7 +9,7 @@ body{
     min-width: 1200px;
     padding-top: 384px;
     padding-bottom: 243px;
-    background: url(../img/sections-background/section-1.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url(../img/sections-background/section-1.jpg) center/cover no-repeat;
     background-attachment: fixed;
     text-align:center;
     width: 100%;
@@ -330,7 +330,7 @@ h1{
 .purchase-section{
     min-width: 1200px;
     /* height: 476px; */
-    background: linear-gradient(rgba(28, 42, 51, .7), rgba(28, 42, 51, .7)), url(../img/sections-background/section-2.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/sections-background/section-2.jpg) center/cover no-repeat;
     background-position: top;
     background-attachment: fixed;
     text-align:center;
@@ -608,6 +608,10 @@ h1{
 .loading p:nth-child(8) {
     animation: var(--effect) .875s;
 }
+
+.loading p:nth-child(9) {
+    animation: var(--effect) 1s;
+}
   
 @keyframes hover {
     0% {
@@ -714,7 +718,7 @@ h1{
 
 .people__section{
     min-width: 1200px;
-    background: linear-gradient(rgba(28, 42, 51, .7), rgba(28, 42, 51, .7)), url(../img/sections-background/section-3.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/sections-background/section-3.jpg) center/cover no-repeat;
     background-position: top;
     background-attachment: fixed;
     text-align:center;
