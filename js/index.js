@@ -19,7 +19,7 @@ function selectContent(activeTab, contentList, className) {
 }
 tabsList.addEventListener("click", (element) => {
   const target = element.target.closest("li");
-  selectTitle(target, tabsContent);
+  selectTitle(target, tabsTitle, activeTabClass);
   selectContent(target.dataset.category, tabsContent, activeTabClass);
 });
 
@@ -281,7 +281,7 @@ const imagesArray = [
 ];
 
 const showImg = () => {
-  document.querySelector(".load-txt").classList.remove('loading');
+  document.querySelector(".load-txt").classList.remove("loading");
   const workCards = document.querySelector(".work-cards");
 
   let list = imagesArray.map((item, index) => {
@@ -336,7 +336,7 @@ btnLoad.addEventListener("click", () => {
   count += 12;
   step += 12;
   if (step <= imagesArray.length && count <= imagesArray.length) {
-    document.querySelector(".load-txt").classList.add('loading');
+    document.querySelector(".load-txt").classList.add("loading");
     setTimeout(showImg, 2600);
   } else {
     btnLoad.remove();
@@ -370,11 +370,11 @@ profileListTab.addEventListener("click", ({ target }) => {
   selectTitle(el, profileList, "show");
   selectContent(el.dataset.category, profileListContent, "show");
 
-  profileList.forEach((el,index)=>{
-    if(el.classList.contains("show")){
+  profileList.forEach((el, index) => {
+    if (el.classList.contains("show")) {
       counter = index;
     }
-  })
+  });
 });
 
 const btnSelect = document.querySelector(".wrapper-about__list__people");
