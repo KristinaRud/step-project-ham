@@ -1,4 +1,4 @@
-<a href="https://kristinarud.github.io/step-project-ham/" rel="nofollow">Demo</a>
+## [DEMO](https://kristinarud.github.io/step-project-ham/)
 
 ## Завдання
 
